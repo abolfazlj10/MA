@@ -1,5 +1,7 @@
 export default function Home() {
   return (
-    <div className="text-blue-300">MA</div>
+    <div className="bg-MainBg bg-cover bg-sizeManiBg h-screen">
+      test
+    </div>
   );
 }

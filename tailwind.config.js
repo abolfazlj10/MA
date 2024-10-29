@@ -11,6 +11,12 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      backgroundImage:{
+        'MainBg' : "url('/MainBackground.jpg')",
+      },
+      backgroundPosition:{
+        'sizeManiBg' : "center bottom -150px"
+      }
     },
   },
   plugins: [],
