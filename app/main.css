@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.MainContainer{
+    @apply bg-MainBg bg-cover bg-sizeManiBg text-white grid grid-rows-[100px_auto_100px] items-center justify-center h-screen;
+}
