@@ -2,6 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    @font-face {
+        font-family: 'PixelifySans';
+        src: url('./fonts/PixelifySans-VariableFont_wght.ttf');
+    }
+    @font-face {
+        font-family: 'hasti';
+        src: url('./fonts/Hasti-Heavy.woff');
+    }
+}
+
+body{
+    @apply !cursor-MACrs select-none;
+}
+
 .MainContainer{
-    @apply bg-MainBg bg-cover bg-sizeManiBg text-white grid grid-rows-[100px_auto_100px] items-center justify-center h-screen;
+    @apply bg-MainBg bg-cover bg-sizeManiBg text-white grid grid-rows-[90px_auto_70px] items-center h-screen;
+}
+.marginCommon{
+    @apply mx-[360px];
+}
+.centerSection{
+    @apply relative font-PixelifySans text-[140px] text-center h-full bg-[#002FFF05] backdrop-blur-[10px] border border-[#FFFFFF54] !rounded-[50px] flex items-end;
+}
+.subText{
+    @apply absolute -bottom-3 drop-shadow-[5px_13px_4px_white] text-[40px] text-center w-full font-hasti;
+}
+.coursorSVG{
+    @apply absolute -right-5 top-52 w-14;
+}
+.layers{
+    @apply flex items-end flex-1 border-t border-[#FFFFFF54] !rounded-[50px];
+}
+.heightLayers{
+    @apply h-[calc(100%-20px)]
+}
+.socialLink{
+    @apply hover:text-white/80 duration-75 select-none;
 }
