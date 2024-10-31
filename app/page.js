@@ -32,7 +32,7 @@ export default function Home() {
         <div>Mehdi Arman</div>
         <div>Mehdi Arman</div>
         <div>Mehdi Arman</div>
-        <div className="absolute text-white w-full h-full top-0 flex justify-center items-center">
+        <div className="positionContainerBoxMA">
           <div className='boxMA'>
             <div className="drop-shadow-[0px_0px_15px_white]">MA</div>
             <img className="-mt-12 drop-shadow-[0px_0px_10px_white]" src="./VectorSecond.svg"/>

@@ -68,6 +68,9 @@ body{
     @apply hidden max-lg:flex text-[120px] border border-white/20 font-PixelifySans px-5 py-20 bg-[#FFFFFF03] rounded-[70px];
     backdrop-filter: blur(7px);
 }
+.positionContainerBoxMA{
+    @apply absolute text-white w-full h-full top-0 flex justify-center items-center;
+}
 @media (max-height:905px){
     .nameFamily{
         @apply text-[200px];
