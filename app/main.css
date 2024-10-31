@@ -5,7 +5,7 @@
 @layer base {
     @font-face {
         font-family: 'PixelifySans';
-        src: url('./fonts/PixelifySans-VariableFont_wght.ttf');
+        src: url('./fonts/PixelifySans-Medium.ttf');
     }
     @font-face {
         font-family: 'hasti';
@@ -16,28 +16,99 @@
 body{
     @apply !cursor-MACrs select-none;
 }
-
-.MainContainer{
-    @apply bg-MainBg bg-cover bg-sizeManiBg text-white grid grid-rows-[90px_auto_70px] items-center h-screen;
+.paddingCommon{
+    @apply min-[840px]:px-[250px];
 }
-.marginCommon{
-    @apply mx-[360px];
+.MainContainer{
+    @apply bg-MainBg bg-cover bg-sizeManiBg text-white grid grid-rows-[90px_minmax(auto,1fr)_minmax(70px,70px)] items-center h-screen overflow-hidden;
+    @apply max-xl:grid-rows-[90px_minmax(auto,750px)_minmax(70px,auto)] max-xl:bg-sizeManiBgXL max-lg:grid-rows-[auto_auto_auto_auto] max-md:gap-5;
+}
+.MainIcon{
+    @apply mx-auto mt-4 w-16 max-md:w-28;
 }
 .centerSection{
-    @apply relative font-PixelifySans text-[140px] text-center h-full bg-[#002FFF05] backdrop-blur-[10px] border border-[#FFFFFF54] !rounded-[50px] flex items-end;
+    @apply relative font-PixelifySans text-center h-full bg-[#0f10144f] backdrop-blur-[10px] border border-[#FFFFFF54] !rounded-[50px] flex items-end;
 }
 .subText{
-    @apply absolute -bottom-3 drop-shadow-[5px_13px_4px_white] text-[40px] text-center w-full font-hasti;
+    @apply absolute -bottom-3 text-[40px] text-center w-full font-hasti;
+    filter: drop-shadow(5px 14px 3px #ffffffa2)
 }
-.coursorSVG{
-    @apply absolute -right-5 top-52 w-14;
+.subTextSecond{
+    @apply text-[50px] text-center w-full font-hasti;
+    filter: drop-shadow(5px 14px 3px #ffffffa2)
+}
+.cursor{
+    @apply absolute -right-5 top-0 h-full w-16  flex justify-center items-center;
 }
 .layers{
     @apply flex items-end flex-1 border-t border-[#FFFFFF54] !rounded-[50px];
+}
+.nameStyle{
+    @apply grid grid-rows-2 drop-shadow-[0px_0px_15px_white];
+}
+.nameFamily{
+    @apply h-full flex items-center justify-center text-[250px] px-[100px];
+    @apply max-2xl:text-[200px] max-lg:text-[165px] ;
 }
 .heightLayers{
     @apply h-[calc(100%-20px)]
 }
 .socialLink{
     @apply hover:text-white/80 duration-75 select-none;
+}
+.containerLinks{
+    @apply flex items-center justify-between font-PixelifySans text-[35px] h-full;
+    @apply max-2xl:text-[30px] max-lg:flex-col max-md:flex max-md:text-[45px] max-sm:text-[40px];
+}
+.repeatNames{
+    @apply font-PixelifySans text-[55px] text-white/60 leading-none m-auto relative;
+    line-height: 90%;
+}
+.boxMA{
+    @apply hidden max-lg:flex text-[120px] border border-white/20 font-PixelifySans px-5 py-20 bg-[#FFFFFF03] rounded-[70px];
+    backdrop-filter: blur(7px);
+}
+@media (max-height:905px){
+    .nameFamily{
+        @apply text-[200px];
+    }
+    .repeatNames{
+        @apply text-[50px];
+    }
+    .boxMA{
+        @apply text-[100px] py-16 rounded-[50px];
+    }
+}
+@media (max-height:855px) {
+    .MainIcon{
+        @apply mt-2;
+    }
+    .containerLinks{
+        @apply text-[30px];
+    }
+}
+@media (max-height:755px){
+    .nameFamily{
+        @apply text-[150px];
+    }
+    .centerSection{
+        @apply mx-40;
+    }
+    .containerLinks{
+        @apply mx-40;
+    }
+}
+@media (max-height:610px){
+    .nameFamily{
+        @apply text-[100px];
+    }
+    .centerSection{
+        @apply mx-52;
+    }
+    .containerLinks{
+        @apply mx-52;
+    }
+    .subText{
+        @apply -bottom-7
+    }
 }

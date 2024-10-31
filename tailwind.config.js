@@ -15,7 +15,8 @@ module.exports = {
         'MainBg' : "url('/MainBackground.jpg')",
       },
       backgroundPosition:{
-        'sizeManiBg' : "center bottom -150px"
+        'sizeManiBg' : "center bottom -150px",
+        'sizeManiBgXL' : "center bottom 0px",
       },
       fontFamily:{
         'PixelifySans' : 'PixelifySans',
@@ -26,6 +27,15 @@ module.exports = {
       },
       cursor:{
         'MACrs' : 'url("/Coursor.png") , auto'
+      },
+      container:{
+        center : true,
+        padding:{
+          DEFAULT: '200px',
+          sm: '20px',
+          lg: '100px',
+          xl: '200px',
+        },
       }
     },
   },
