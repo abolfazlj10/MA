@@ -17,7 +17,7 @@ body{
     @apply !cursor-MACrs select-none;
 }
 .paddingCommon{
-    @apply min-[840px]:px-[250px];
+    @apply min-[1536px]:px-[250px];
 }
 .MainContainer{
     @apply bg-MainBg bg-cover bg-sizeManiBg text-white grid grid-rows-[90px_minmax(auto,1fr)_minmax(70px,70px)] items-center h-screen overflow-hidden;
