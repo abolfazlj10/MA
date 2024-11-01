@@ -1,7 +1,7 @@
 export default function Home() {
 
   return (
-    <div className="MainContainer paddingCommon">
+    <div className="MainContainer">
 
       <img className="MainIcon" src="/MA-Icon.png" />
 
