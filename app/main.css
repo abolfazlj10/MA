@@ -14,7 +14,7 @@
 }
 
 body{
-    @apply !cursor-MACrs select-none;
+    @apply !cursor-MACrs;
 }
 .paddingCommon{
     @apply min-[1536px]:px-[250px];
@@ -54,7 +54,7 @@ body{
     @apply h-[calc(100%-20px)]
 }
 .socialLink{
-    @apply duration-100 text-[#262626] hover:text-[#262626d3] select-none;
+    @apply duration-100 text-[#262626] hover:text-[#262626d3];
 }
 .containerLinks{
     @apply flex items-center justify-between font-PixelifySans text-[35px] h-full;
