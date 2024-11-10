@@ -20,7 +20,7 @@ body{
     @apply min-[1536px]:px-[250px];
 }
 .MainContainer{
-    @apply bg-MainBg bg-cover bg-sizeManiBg text-white grid grid-rows-[90px_minmax(auto,1fr)_minmax(70px,70px)] items-center h-screen overflow-hidden;
+    @apply bg-MainBg bg-cover bg-sizeManiBg text-white grid grid-rows-[90px_minmax(auto,1fr)_minmax(70px,70px)] items-center h-screen h-[100dvh] overflow-hidden;
     @apply max-xl:grid-rows-[90px_minmax(auto,750px)_minmax(70px,auto)] max-xl:bg-sizeManiBgXL max-lg:grid-rows-[auto_auto_auto_auto] max-md:gap-5;
 }
 .MainIcon{
@@ -30,12 +30,12 @@ body{
     @apply relative font-PixelifySans text-center h-full bg-[#0f10144f] backdrop-blur-[10px] border border-[#FFFFFF54] !rounded-[50px] flex items-end;
 }
 .subText{
-    @apply absolute -bottom-3 text-[40px] text-center w-full font-hasti;
-    filter: drop-shadow(5px 14px 3px #ffffffa2)
+    @apply absolute -bottom-3 text-[40px] text-center w-full font-hasti text-[#010101];
+    filter: drop-shadow(5px 14px 3px #262626)
 }
 .subTextSecond{
-    @apply text-[50px] text-center w-full font-hasti;
-    filter: drop-shadow(5px 14px 3px #ffffffa2)
+    @apply text-[50px] text-center w-full font-hasti text-[#010101];
+    filter: drop-shadow(5px 14px 3px #262626)
 }
 .cursor{
     @apply absolute -right-5 top-0 h-full w-16  flex justify-center items-center;
@@ -54,7 +54,7 @@ body{
     @apply h-[calc(100%-20px)]
 }
 .socialLink{
-    @apply hover:text-white/80 duration-75 select-none;
+    @apply duration-100 text-[#262626] hover:text-[#262626d3] select-none;
 }
 .containerLinks{
     @apply flex items-center justify-between font-PixelifySans text-[35px] h-full;
@@ -64,22 +64,12 @@ body{
     @apply font-PixelifySans text-[55px] text-white/60 leading-none m-auto relative;
     line-height: 90%;
 }
-.boxMA{
-    @apply hidden max-lg:flex text-[120px] border border-white/20 font-PixelifySans px-5 py-20 bg-[#FFFFFF03] rounded-[70px];
-    backdrop-filter: blur(7px);
-}
-.positionContainerBoxMA{
-    @apply absolute text-white w-full h-full top-0 flex justify-center items-center;
-}
 @media (max-height:905px){
     .nameFamily{
         @apply text-[200px];
     }
     .repeatNames{
         @apply text-[50px];
-    }
-    .boxMA{
-        @apply text-[100px] py-16 rounded-[50px];
     }
 }
 @media (max-height:855px) {

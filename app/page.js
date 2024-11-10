@@ -32,12 +32,6 @@ export default function Home() {
         <div>Mehdi Arman</div>
         <div>Mehdi Arman</div>
         <div>Mehdi Arman</div>
-        <div className="positionContainerBoxMA">
-          <div className='boxMA'>
-            <div className="drop-shadow-[0px_0px_15px_white]">MA</div>
-            <img className="-mt-12 drop-shadow-[0px_0px_10px_white]" src="./VectorSecond.svg"/>
-          </div>
-        </div>
       </div>
 
       <div className="subTextSecond hidden max-lg:block">عاشق خلاقیت</div>
